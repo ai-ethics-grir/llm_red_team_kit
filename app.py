@@ -13,7 +13,7 @@ def gate():
     if st.button("Enter"):
         if pin == PIN:
             st.session_state["ok"] = True
-            st.experimental_rerun()
+            st.rerun()
         else:
             st.error("Wrong PIN")
     st.stop()
